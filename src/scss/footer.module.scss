@@ -1,0 +1,86 @@
+@import "./redyScss/--varibale.scss";
+@import "./redyScss/--mixin.scss";
+
+#footer {
+  background: $colorBlack;
+  padding-top: 50px;
+
+  #footerTop {
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    #logo {
+      width: 170px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      color: $colorOrange;
+      font-size: 25px;
+      font-family: $fontBarlow;
+      font-weight: 400;
+      padding-top: 30px;
+    }
+
+    .parh {
+      text-align: left;
+      color: $colorWhite;
+    }
+
+    // .address {
+    //   line-height: 30px;
+    // }
+
+    .socailIcon {
+      margin-top: 15px;
+
+      li {
+        float: left;
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        color: $colorWhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  #footerBottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .parh {
+      @include parh();
+      text-align: left;
+      display: inline-block;
+    }
+
+    .footerList {
+      float: right;
+
+      li {
+        color: $colorGray;
+        float: left;
+        margin-right: 10px;
+      }
+    }
+
+    @media screen and(max-width: 767px) {
+      .parh {
+        text-align: center !important;
+        display: block;
+      }
+
+      .footerList {
+        margin-top: 20px;
+        float: none;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

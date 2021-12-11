@@ -1,0 +1,100 @@
+@import "./redyScss/--varibale.scss";
+@import "./redyScss/--mixin.scss";
+
+#services {
+  background: $secBg;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .title {
+    @include title();
+  }
+
+  .heading {
+    @include heading();
+    margin-bottom: 35px;
+  }
+
+  figure {
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.7s;
+
+    img {
+      filter: grayscale(90%);
+      transition-duration: 0.7s;
+    }
+
+    figcaption {
+      position: absolute;
+      transition-duration: 0.3s;
+      padding: 30px;
+      bottom: -55px;
+      left: 0;
+      right: 0;
+
+      .title {
+        @include title();
+        text-align: center;
+        margin-bottom: 10px;
+        letter-spacing: 5px;
+      }
+
+      h3 {
+        text-align: center;
+        color: $colorWhite;
+        font-size: 20px;
+        font-family: $fontDidact;
+      }
+
+      .arrowSimbol {
+        font-size: 30px;
+        color: $colorWhite;
+        text-align: center;
+      }
+    }
+
+    &:hover {
+      transform: scale(0.9);
+
+      img {
+        filter: grayscale(0%);
+        transform: scale(1.2);
+      }
+
+      figcaption {
+        bottom: 0;
+      }
+    }
+  }
+
+  .servicesPage {
+    position: relative;
+    margin-top: 20px;
+    float: right;
+
+    a {
+      color: $colorGray;
+      font-size: 16px;
+      text-transform: capitalize;
+      text-decoration: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        margin-top: 5px;
+        left: 0;
+        bottom: 0;
+        width: 79px;
+        height: 1px;
+        background: $colorOrange;
+      }
+
+      &:hover {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

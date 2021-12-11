@@ -1,0 +1,99 @@
+#about {
+  background: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#about .content {
+  width: 730px;
+  margin: 0 auto;
+}
+
+#about .content .title {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #f96f00;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 400;
+}
+
+#about .content .heading {
+  font-size: 60px;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  #about .content .heading {
+    font-size: 50px;
+  }
+}
+
+#about .content .parh {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+#about .content .award {
+  padding-top: 30px;
+  height: 160px;
+}
+
+#about .content .award .title {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #f96f00;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+#about .content .award .carousel {
+  width: 100%;
+  position: relative;
+}
+
+#about .content .award .carousel .owlCarousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about .content .award .carousel .owlCarousel .item {
+  margin-right: 15px;
+  border: 1px solid #f2e7eb;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+#about .content .award .carousel .owlCarousel .item:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+@media screen and (max-width: 768px) {
+  #about .content {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #about .content {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=about.module.css.map */

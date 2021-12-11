@@ -1,0 +1,43 @@
+@import "./redyScss/--varibale.scss";
+@import "./redyScss/--mixin.scss";
+
+ul,
+figure,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  @include title();
+}
+
+.heading {
+  @include heading();
+}
+
+.parh {
+  @include parh();
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+@media screen and(max-width: 991px) {
+  .active {
+    display: block !important;
+  }
+
+  .hide {
+    display: none !important;
+  }
+}

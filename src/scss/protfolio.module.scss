@@ -1,0 +1,43 @@
+@import "./redyScss/--varibale.scss";
+@import "./redyScss/--mixin.scss";
+
+#portfolio {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .title {
+    @include title();
+  }
+
+  .heading {
+    @include heading();
+  }
+
+  .content {
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-bottom: 30px;
+
+    .imgBox {
+      figure {
+        img {
+          transition-duration: 0.7s;
+          clip-path: inset(0 0 0 0);
+          filter: grayscale(90%);
+        }
+      }
+    }
+
+    &:hover {
+      .imgBox {
+        figure {
+          img {
+            clip-path: inset(5%);
+            filter: grayscale(0%);
+          }
+        }
+      }
+    }
+  }
+}

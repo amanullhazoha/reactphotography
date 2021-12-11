@@ -1,0 +1,125 @@
+#services {
+  background: #f7f7f7;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#services .title {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #f96f00;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 400;
+}
+
+#services .heading {
+  font-size: 60px;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 15px;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 375px) {
+  #services .heading {
+    font-size: 50px;
+  }
+}
+
+#services figure {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+#services figure img {
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+#services figure figcaption {
+  position: absolute;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  padding: 30px;
+  bottom: -55px;
+  left: 0;
+  right: 0;
+}
+
+#services figure figcaption .title {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #f96f00;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+}
+
+#services figure figcaption h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+#services figure figcaption .arrowSimbol {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+#services figure:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#services figure:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#services figure:hover figcaption {
+  bottom: 0;
+}
+
+#services .servicesPage {
+  position: relative;
+  margin-top: 20px;
+  float: right;
+}
+
+#services .servicesPage a {
+  color: #777;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+#services .servicesPage a::before {
+  content: "";
+  position: absolute;
+  margin-top: 5px;
+  left: 0;
+  bottom: 0;
+  width: 79px;
+  height: 1px;
+  background: #f96f00;
+}
+
+#services .servicesPage a:hover::before {
+  display: none;
+}
+/*# sourceMappingURL=services.module.css.map */

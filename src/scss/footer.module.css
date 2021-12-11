@@ -1,0 +1,92 @@
+#footer {
+  background: #000;
+  padding-top: 50px;
+}
+
+#footer #footerTop {
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#footer #footerTop #logo {
+  width: 170px;
+  margin-bottom: 15px;
+}
+
+#footer #footerTop h3 {
+  color: #f96f00;
+  font-size: 25px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+#footer #footerTop .parh {
+  text-align: left;
+  color: #fff;
+}
+
+#footer #footerTop .socailIcon {
+  margin-top: 15px;
+}
+
+#footer #footerTop .socailIcon li {
+  float: left;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer #footerBottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#footer #footerBottom .parh {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
+  color: #777;
+  text-align: left;
+  display: inline-block;
+}
+
+#footer #footerBottom .footerList {
+  float: right;
+}
+
+#footer #footerBottom .footerList li {
+  color: #777;
+  float: left;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  #footer #footerBottom .parh {
+    text-align: center !important;
+    display: block;
+  }
+  #footer #footerBottom .footerList {
+    margin-top: 20px;
+    float: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=footer.module.css.map */

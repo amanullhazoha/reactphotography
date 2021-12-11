@@ -1,0 +1,70 @@
+@import "./redyScss/--varibale.scss";
+@import "./redyScss/--mixin.scss";
+
+#about {
+  background: $colorWhite;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .content {
+    width: 730px;
+    margin: 0 auto;
+
+    .title {
+      text-align: center;
+      @include title();
+    }
+
+    .heading {
+      @include heading();
+      text-align: center;
+    }
+
+    .parh {
+      @include parh();
+      margin-bottom: 15px;
+    }
+
+    .award {
+      padding-top: 30px;
+      height: 160px;
+
+      .title {
+        @include title();
+        padding-bottom: 20px;
+      }
+
+      .carousel {
+        width: 100%;
+        position: relative;
+
+        .owlCarousel {
+          display: flex;
+          justify-content: center;
+
+          .item {
+            margin-right: 15px;
+            border: 1px solid $colorlightGray;
+            filter: grayscale(100%);
+
+            &:hover {
+              filter: grayscale(0%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .content {
+      width: 450px;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    .content {
+      width: 100%;
+    }
+  }
+}

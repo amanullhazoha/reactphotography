@@ -1,0 +1,76 @@
+@import "./redyScss/--varibale.scss";
+@import "./redyScss/--mixin.scss";
+
+#team {
+  background: $secBg;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .heading {
+    @include heading();
+    margin-bottom: 30px;
+  }
+
+  figure {
+    img {
+      clip-path: inset(0 0 0 0);
+      transition-duration: 0.7s;
+      filter: grayscale(90%);
+    }
+
+    figcaption {
+      position: relative;
+      padding: 30px 15px;
+      overflow: hidden;
+
+      h3 {
+        font-size: 25px;
+        font-family: $fontBarlow;
+        color: $colorBlack;
+        text-align: center;
+        font-weight: 400;
+      }
+
+      .contactInfo {
+        padding: 30px 15px;
+        position: absolute;
+        transition-duration: 0.5s;
+        background: $secBg;
+        left: 0;
+        right: 0;
+        bottom: 100px;
+
+        .icon {
+          display: inline-block;
+          display: flex;
+          justify-content: center;
+
+          li {
+            float: left;
+            margin-right: 15px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            a {
+              color: $colorOrange;
+            }
+          }
+        }
+      }
+    }
+
+    &:hover {
+      img {
+        clip-path: inset(2.5%);
+      }
+
+      figcaption {
+        .contactInfo {
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+#portfolio {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#portfolio .title {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #f96f00;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 400;
+}
+
+#portfolio .heading {
+  font-size: 60px;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  #portfolio .heading {
+    font-size: 50px;
+  }
+}
+
+#portfolio .content {
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+
+#portfolio .content .imgBox figure img {
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
+}
+
+#portfolio .content:hover .imgBox figure img {
+  -webkit-clip-path: inset(5%);
+          clip-path: inset(5%);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+/*# sourceMappingURL=protfolio.module.css.map */

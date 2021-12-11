@@ -1,0 +1,60 @@
+ul,
+figure,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #f96f00;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 400;
+}
+
+.heading {
+  font-size: 60px;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  .heading {
+    font-size: 50px;
+  }
+}
+
+.parh {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
+  color: #777;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .active {
+    display: block !important;
+  }
+  .hide {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=global.css.map */

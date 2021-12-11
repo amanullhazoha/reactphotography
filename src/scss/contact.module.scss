@@ -1,0 +1,76 @@
+@import "./redyScss/--varibale.scss";
+@import "./redyScss/--mixin.scss";
+
+#contact {
+  padding-top: 50px;
+  padding: 50px;
+
+  .content {
+    .parh {
+      @include parh();
+      text-align: left;
+      font-weight: 400;
+      margin-bottom: 15px;
+
+      span {
+        font-size: 20px;
+        font-weight: 400;
+        color: $colorBlack;
+        font-family: $fontBarlow;
+      }
+    }
+
+    form {
+      input,
+      textarea {
+        width: 100%;
+        border: 0;
+        outline: none;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #dedede;
+        padding-bottom: 5px;
+        color: $colorGray;
+        transition-duration: 0.7s;
+
+        &:focus {
+          border-bottom: 1px solid $colorOrange;
+        }
+      }
+
+      button {
+        margin-top: 15px;
+        padding: 10px 30px;
+        background: $colorOrange;
+        color: $colorWhite;
+        font-size: 16px;
+        font-family: $fontBarlow;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border: none;
+        outline: none;
+        transition-duration: 0.7s;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 30px;
+          width: 0;
+          height: 1px;
+          background: $colorWhite;
+          transition-duration: 0.3s;
+        }
+
+        &:hover {
+          padding-left: 70px;
+          color: $colorBlack;
+
+          &::before {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}

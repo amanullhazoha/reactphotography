@@ -1,0 +1,77 @@
+#contact {
+  padding-top: 50px;
+  padding: 50px;
+}
+
+#contact .content .parh {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
+  color: #777;
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#contact .content .parh span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+#contact .content form input,
+#contact .content form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 5px;
+  color: #777;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+#contact .content form input:focus,
+#contact .content form textarea:focus {
+  border-bottom: 1px solid #f96f00;
+}
+
+#contact .content form button {
+  margin-top: 15px;
+  padding: 10px 30px;
+  background: #f96f00;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: none;
+  outline: none;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  position: relative;
+}
+
+#contact .content form button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+#contact .content form button:hover {
+  padding-left: 70px;
+  color: #000;
+}
+
+#contact .content form button:hover::before {
+  width: 30px;
+}
+/*# sourceMappingURL=contact.module.css.map */

@@ -1,0 +1,107 @@
+@import "./redyScss/--varibale.scss";
+@import "./redyScss/--mixin.scss";
+
+#header {
+  position: relative;
+  z-index: 999;
+  padding-top: 30px;
+  width: 100%;
+  height: 100vh;
+
+  .navbar {
+    padding: 0;
+
+    .content {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #logo {
+      width: 170px;
+    }
+
+    .nav {
+      ul {
+        a {
+          text-decoration: none;
+          color: $colorWhite;
+
+          li {
+            list-style: none;
+            float: left;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: $fontDidact;
+            margin: 15px 2px;
+            padding: 8px;
+          }
+
+          :hover {
+            color: $colorOrange;
+          }
+        }
+      }
+    }
+
+    .toggler,
+    .closeBtn {
+      display: none;
+      position: relative;
+      border: none;
+      background: transparent;
+
+      span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: $colorOrange;
+      }
+
+      .bottom {
+        margin-top: 5px;
+      }
+    }
+
+    .closeBtn {
+      width: 24px !important;
+
+      .top {
+        position: absolute;
+        right: 0;
+        transform: rotate(45deg);
+      }
+
+      .bottom {
+        position: absolute;
+        right: 0;
+        margin: 0;
+        transform: rotate(-45deg);
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      .nav {
+        display: none;
+        position: absolute;
+        background: #000;
+        top: 65px;
+        width: 100%;
+        box-shadow: 0 0 5px $colorWhite;
+        ul {
+          a {
+            li {
+              float: none;
+              display: block;
+              margin: 0;
+            }
+          }
+        }
+      }
+      .toggler {
+        display: block;
+      }
+    }
+  }
+}

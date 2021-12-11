@@ -1,0 +1,66 @@
+#pricing {
+  background: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#pricing .pricingContent {
+  padding: 30px 30px 40px 30px;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+#pricing .pricingContent .pricingBox {
+  padding-bottom: 50px;
+}
+
+#pricing .pricingContent .pricingBox h3 {
+  text-align: center;
+  color: #f96f00;
+  font-size: 25px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+#pricing .pricingContent .pricingBox .priceBlock {
+  position: relative;
+  width: 150px;
+  margin: 0 auto;
+}
+
+#pricing .pricingContent .pricingBox .priceBlock .price {
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+#pricing .pricingContent .pricingBox .priceBlock .price sup {
+  font-size: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  position: absolute;
+  top: 30px;
+  left: 25px;
+}
+
+#pricing .pricingContent .pricingBox .parh {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
+  color: #777;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: 30px;
+}
+
+#pricing .pricingContent:hover {
+  -webkit-clip-path: inset(3%);
+          clip-path: inset(3%);
+}
+/*# sourceMappingURL=pricing.module.css.map */

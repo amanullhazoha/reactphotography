@@ -1,0 +1,130 @@
+@import "./redyScss/--varibale.scss";
+@import "./redyScss/--mixin.scss";
+
+#blog {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: $secBg;
+
+  .heading {
+    @include heading();
+    margin-bottom: 30px;
+  }
+
+  .blogContent {
+    transition-duration: 0.7s;
+    clip-path: inset(0 0 0 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    position: relative;
+
+    .overly {
+      background: $colorWhite;
+      padding: 60px 30px;
+      z-index: 9999;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -99;
+      }
+
+      .post {
+        a {
+          text-decoration: none;
+        }
+
+        .postDate {
+          margin-bottom: 15px;
+
+          a {
+            color: $colorGray;
+
+            p {
+              font-size: 16px;
+              font-family: $fontBarlow;
+              text-transform: uppercase;
+
+              span {
+                &:last-child {
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+
+        h3 {
+          color: $colorBlack;
+          text-transform: uppercase;
+          font-size: 35px;
+          font-family: $fontBarlow;
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+
+        .parh {
+          @include parh();
+          line-height: 32px;
+          text-align: left;
+          margin-bottom: 30px;
+        }
+
+        button {
+          background: transparent;
+          border: none;
+          position: relative;
+          padding: 0;
+          color: $colorGray;
+
+          &::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: $colorOrange;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+          }
+
+          &:hover {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    &:hover {
+      clip-path: inset(3%);
+
+      .overly {
+        background: transparent;
+
+        &::before {
+          background: rgba($color: #000000, $alpha: 0.7);
+        }
+
+        .post {
+          h3 {
+            color: $colorWhite;
+          }
+
+          .parh {
+            color: $colorWhite;
+          }
+
+          button {
+            color: $colorWhite;
+          }
+        }
+      }
+    }
+  }
+}
